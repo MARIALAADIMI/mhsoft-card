@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Retrouvez MHSoft : sites web, NFC et invitations digitales.">
+<title>MHSoft — Carte digitale</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#090909;color:#f8f3e5;font-family:Arial,sans-serif;min-height:100svh;display:grid;place-items:center;padding:32px 20px;background-image:radial-gradient(ellipse at 10% 0%,#b18a3022,transparent 45%),radial-gradient(ellipse at 100% 95%,#b18a3017,transparent 40%)}main{width:100%;max-width:420px;text-align:center;padding:30px 26px;border:1px solid #caa44c40;border-radius:28px;background:linear-gradient(145deg,#141412,#080808 65%);box-shadow:0 25px 90px #0009;position:relative;overflow:hidden}main:before{content:"";position:absolute;top:0;left:22%;right:22%;height:1px;background:linear-gradient(90deg,transparent,#f3d57e,transparent)}.eyebrow{font-size:10px;letter-spacing:3px;color:#d2b86d;margin:0 0 14px}.logo{width:210px;max-width:85%;height:auto;display:block;margin:0 auto 8px}h1{font-size:28px;margin:5px 0 6px;letter-spacing:-1px}.tagline{font-size:12px;letter-spacing:3px;color:#cdbb8f;margin:0}.line{width:38px;height:2px;background:#e9c76a;margin:23px auto}.intro{font-size:13px;line-height:1.7;color:#aaa69c;margin:0 0 24px}nav{display:grid;gap:11px}a,button{font:inherit}a.link,button.link{width:100%;display:flex;align-items:center;gap:14px;text-decoration:none;color:#eee;background:linear-gradient(120deg,#252522,#181818);border:1px solid #ffffff14;border-radius:12px;padding:16px;text-align:left;font-size:14px;cursor:pointer;transition:transform .2s,border-color .2s}a.link:hover,button.link:hover{transform:translateY(-2px);border-color:#d4b561}a:focus-visible,button:focus-visible{outline:2px solid #f2ce72;outline-offset:4px}.icon{width:25px;text-align:center;font-size:20px;color:#e7ca7c}.arrow{margin-left:auto;color:#8f8d84}.contact{margin-top:18px!important;background:linear-gradient(110deg,#f5dd95,#c49a3b)!important;color:#17130a!important;font-weight:bold!important;border:0!important;justify-content:center}.contact .icon{color:#17130a}.services{font-size:9px;color:#bfa66a;letter-spacing:2px;line-height:2;margin:28px 0 0}footer{font-size:10px;color:#68665e;margin-top:16px}#notice{color:#dfc77f;font-size:12px;line-height:1.6;min-height:18px;margin:14px 0 0}@media(max-width:380px){main{padding:26px 18px}body{padding:16px 12px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Compact card inspired by the supplied reference. */
+main{max-width:370px;padding:34px 24px 24px;border-radius:25px}
+.logo-ring{width:100px;height:100px;margin:0 auto 14px;border:1.5px solid #dfbf69;border-radius:50%;position:relative;overflow:hidden;background:#000;box-shadow:0 0 24px #d1a74910}
+.logo-ring img{position:absolute;width:142px;max-width:none;height:auto;left:-23px;top:-5px}
+h1{font-size:26px;font-style:italic;font-weight:500;margin:0 0 5px;letter-spacing:-.6px}
+.tagline{font-size:12px;letter-spacing:0;color:#bcbab3}
+.line{margin:19px auto 23px;width:28px;height:1px}
+nav{gap:10px}.icon{display:flex;align-items:center;justify-content:center;flex:0 0 23px;height:23px;color:#f4f4f4}.icon svg{display:block;width:22px;height:22px}
+.phone{color:#27d46d;filter:drop-shadow(0 0 4px #25d36635)}.instagram{color:#ef8bba}.tiktok{color:white;filter:drop-shadow(-1px 0 #25f4ee) drop-shadow(1px 1px #fe2c55)}.website{color:#f4f4f4}
+a.link,button.link{padding:13px 14px;border-radius:10px;font-size:13px;gap:13px;min-height:49px;background:linear-gradient(110deg,#252525,#191919)}
+.arrow{font-size:13px;color:#b8b5ab}.contact{margin-top:10px!important;background:linear-gradient(110deg,#252525,#191919)!important;border:1px solid #ffffff14!important;color:#eee!important;justify-content:flex-start;font-weight:400!important}.contact .icon{color:#eee}
+.services{margin-top:20px;font-size:8px;letter-spacing:1.5px}#notice:empty{display:none}footer{margin-top:12px}
+
+/* Full logo contained inside a smaller gold circle, without cropping. */
+.logo-ring{width:156px;height:156px;margin:20px auto 18px;display:flex;align-items:center;justify-content:center;border:1.5px solid #dfbf69;border-radius:50%;overflow:hidden;background:#000}
+.logo-ring img{position:static;width:126px;height:126px;max-width:100%;object-fit:contain}
+.eyebrow{font-size:10px;letter-spacing:3px;margin:0;color:#d2b86d}
+.tagline{font-size:12px;letter-spacing:3px;color:#cdbb8f}
+.line{margin:23px auto;width:38px;height:2px}
+.intro{font-size:13px;line-height:1.8;color:#bcb8ad;margin:0 0 24px}
+</style>
+</head>
+<body><main>
+<p class="eyebrow">VOTRE CONNEXION DIGITALE</p>
+
+<div class="logo-ring"><img src="assets/logo.png" alt="Logo MHSoft"></div>
+<p class="tagline" id="tagline">Digital Solutions</p><div class="line"></div>
+<p class="intro">Un contact. Toutes nos solutions.<br>Retrouvez-nous en un clic.</p>
+
+<nav aria-label="Nous contacter">
+<a class="link" data-key="phone" href="#"><span class="icon phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 23.5 12c0-3.2-1.2-6.2-3-8.5ZM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9.4 9.4 0 1 1 12 21Zm5.2-6.9c-.3-.1-1.7-.8-2-.9-.2-.1-.4-.1-.6.2l-.9 1c-.2.2-.3.2-.6.1a7.6 7.6 0 0 1-3.7-3.2c-.2-.3 0-.4.1-.6l.6-.7c.1-.2.1-.4 0-.6l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.6c-.2 0-.5.1-.7.3-.7.7-1 1.5-1 2.4 0 1.4 1 2.8 1.2 3a11 11 0 0 0 4.6 4.1c1.7.8 2.4.8 3.3.6.7-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.2-.2-.5-.3Z"/></svg></span>WhatsApp<span class="arrow">↗</span></a>
+<a class="link" data-key="instagram" href="#"><span class="icon instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>Instagram<span class="arrow">↗</span></a>
+<a class="link" data-key="tiktok" href="#"><span class="icon tiktok" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 2h-3.5v13.6a2.9 2.9 0 1 1-2.5-2.9V9.2a6.4 6.4 0 1 0 6 6.4V8.7a8.7 8.7 0 0 0 5 1.6V6.8a5.2 5.2 0 0 1-5-4.8Z"/></svg></span>TikTok<span class="arrow">↗</span></a>
+<a class="link" data-key="website" href="#"><span class="icon website" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg></span>Site web<span class="arrow">↗</span></a>
+</nav>
+<button class="link contact" id="save"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="9" cy="7" r="4"/><path d="M1 21v-3a8 8 0 0 1 14-5v8ZM19 9v4h4v2h-4v4h-2v-4h-3v-2h3V9Z"/></svg></span>Ajouter au contact</button>
+<p id="notice" role="status"></p>
+<p class="services">WEBSITES · NFC · DIGITAL INVITATIONS</p><footer>© <span id="year"></span> MHSoft</footer>
+</main><script src="config.js"></script><script>
+const c=window.CARD;document.getElementById('tagline').textContent=c.tagline;document.getElementById('year').textContent=new Date().getFullYear();
+const tell=t=>document.getElementById('notice').textContent=t;
+document.querySelectorAll('[data-key]').forEach(a=>{const k=a.dataset.key;const v=c[k];if(v){let url=k==='phone'?'https://wa.me/'+v.replace(/\D/g,''):v;try{const u=new URL(url);if(!['http:','https:'].includes(u.protocol))throw 0;a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';}catch{a.onclick=e=>{e.preventDefault();tell('Lien incorrect dans config.js.')}}}else{a.onclick=e=>{e.preventDefault();tell('Ce lien sera disponible prochainement.')}}});
+const esc=s=>String(s||'').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');
+document.getElementById('save').onclick=()=>{if(!c.phone&&!c.email){tell('Les coordonnées de contact seront disponibles prochainement.');return}let v=['BEGIN:VCARD','VERSION:3.0','FN:'+esc(c.name),'ORG:'+esc(c.name)];if(c.phone)v.push('TEL;TYPE=WORK:+'+c.phone.replace(/\D/g,''));if(c.email)v.push('EMAIL:'+esc(c.email));if(c.website)v.push('URL:'+esc(c.website));v.push('END:VCARD');const u=URL.createObjectURL(new Blob([v.join('\r\n')+'\r\n'],{type:'text/vcard;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='MHSoft.vcf';a.click();setTimeout(()=>URL.revokeObjectURL(u),10000);tell('Ouvrez le fichier téléchargé pour enregistrer le contact.');};
+</script></body></html>
